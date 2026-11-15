@@ -48,6 +48,19 @@ trades in grinding downtrends.
 The dev window itself falls ~4% top to bottom, so the money comes from
 the V-shaped rebounds — the biggest one runs +5.5% from its trough.
 
+## Tuning journey
+
+- **v1** (plain dip legs, flat take-profit): +$0.30 — barely above water.
+- **v2** (ride-the-V: bank a slice, trail the rest): +$5.64.
+- **v3** (tighter dip thresholds, deeper capitulation leg): +$21.27.
+- **Final** (leg sizes rebalanced, trailing giveback tuned): +$25.13 in the
+  backtester, +$23.60 under the kit's own grader.
+
+Tried and discarded: averaging down into a grinding downtrend (−$25.52),
+a shallow-wiggle leg and a recovery-pullback leg (both added losing
+trades). The lesson of the window: only sharp, confirmed capitulations
+pay; shallow dips in a grind do not.
+
 ## Run it
 
 ```sh
